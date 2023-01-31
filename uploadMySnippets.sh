@@ -43,7 +43,7 @@ function uploadLocalCodeSnippetsAndFileTemplates {
     git commit -m "${commitLog}"
     
     # 远端强制提交
-    printStep "git push -f origin master"
+    printStep "git push origin master"
     git push origin master
 }
 

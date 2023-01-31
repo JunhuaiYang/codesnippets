@@ -9,8 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)dealloc
- {
+	<string>- (void)dealloc {
     NSLog(@"%s",__func__);
 }
 </string>
