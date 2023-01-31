@@ -25,13 +25,13 @@ function printStep {
 function uploadLocalCodeSnippetsAndFileTemplates {
     # 文件夹授权
     chmod 775 ~/Library/Developer/Xcode/UserData/CodeSnippets/
-    chmod 775 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/
+    # chmod 775 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/
     # 新建临时文件夹
     makeDir snippets
     makeDir filetemplete
     # 将系统目录下的代码块和自定义类文件模版拷贝到新建的文件夹中
     cp -rf ~/Library/Developer/Xcode/UserData/CodeSnippets/* ./snippets/
-    cp -rf /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/Custom ./filetemplete/
+    # cp -rf /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/Custom ./filetemplete/
     # 本地强制提交云端
     git add .
     printStep "git add ."
