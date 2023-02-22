@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>delegate_respond</string>
+	<string>GCD_after</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (self.delegate &amp;&amp; [self.delegate respondsToSelector:@selector(&lt;#methodName#&gt;)]) {
-        [self.delegate &lt;#methodName#&gt;];
-    }</string>
+	<string>    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(&lt;#delayInSeconds#&gt; * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        &lt;#code to be executed after a specified delay#&gt;
+   });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8A98B142-2FDB-465E-A80B-C91A1F1910AB</string>
+	<string>6A063DCB-3E45-4AA9-8161-E260D8ED4229</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>代理对象安全响应方法</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>delegate responsd selector</string>
+	<string>GCD_after</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

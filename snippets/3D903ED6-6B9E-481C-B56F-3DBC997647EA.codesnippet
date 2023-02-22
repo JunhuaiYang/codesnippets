@@ -13,7 +13,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3D903ED6-6B9E-481C-B56F-3DBC997647EA</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>代理方法代码块标识</string>
 	<key>IDECodeSnippetTitle</key>
