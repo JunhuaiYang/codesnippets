@@ -58,6 +58,8 @@ function syncXcodesnippetsAndFileTemplatesFromOnlinestorage {
     # cd codesnippets
     
     # 先备份一下
+    mkdir -p ./Backup/CodeSnippets
+    mkdir -p ./Backup/FileTemplates
     cp -a ~/Library/Developer/Xcode/UserData/CodeSnippets/ ./Backup/CodeSnippets
     cp -a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File\ Templates/ ./Backup/FileTemplates
 
